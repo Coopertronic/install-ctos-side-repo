@@ -4,6 +4,7 @@ clear
 echo "Adding keys to pacman ..."
 sudo pacman -Syu wget
 workDIR=$PWD
+echo $workDIR
 cd $workDIR
 mkdir -p .temp
 cd .temp
