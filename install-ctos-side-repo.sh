@@ -27,3 +27,6 @@ rm -r .temp
 sudo pacman-key --init
 sudo pacman-key --populate archlinux ctos
 sudo pacman -Syyu ctos-functions --noconfirm
+
+echo $workDIR
+
