@@ -1,10 +1,10 @@
 #!/bin/bash
 
 clear
-echo "Adding keys to pacman ..."
-sudo pacman -Syu wget
 workDIR=$PWD
 echo $workDIR
+echo "Adding keys to pacman ..."
+sudo pacman -Syu wget
 cd $workDIR
 mkdir -p .temp
 cd .temp
