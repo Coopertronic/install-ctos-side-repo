@@ -21,9 +21,9 @@ EOT
 )
 getPacmanConf=$(cat /etc/pacman.conf)
 echo "$getPacmanConf$addRepoToConfig" >>pacman.conf
-sudo cp -vir "$workDIR/.temp/ctos*" /usr/share/pacman/keyrings/
-sudo cp -vir "$workDIR/.temp/pacman.conf" /etc/
 ls -a
+#sudo cp -vir "$workDIR/.temp/ctos*" /usr/share/pacman/keyrings/
+#sudo cp -vir "$workDIR/.temp/pacman.conf" /etc/
 cd ../
 #rm -r .temp
 #sudo pacman-key --init
