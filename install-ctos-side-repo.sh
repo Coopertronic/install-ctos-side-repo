@@ -29,8 +29,8 @@ cd ../
 rm -r .temp
 ls -a /usr/share/pacman/keyrings/
 sudo pacman-key --init
-
-sudo pacman-key --lsign ctos
+sudo pacman-key --recv-key 96B18846B407D68E81C77D8B515A202B640F3678
+sudo pacman-key --lsign 96B18846B407D68E81C77D8B515A202B640F3678
 sudo pacman-key --populate archlinux ctos
 sudo pacman -Syyu ctos-functions --noconfirm
 
