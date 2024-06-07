@@ -3,7 +3,7 @@
 clear
 echo "Adding keys to pacman ..."
 sudo pacman -Syu wget
-workDIR="$PWDS"
+workDIR=$PWD
 cd $workDIR
 mkdir -p .temp
 cd .temp
