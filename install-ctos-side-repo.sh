@@ -24,13 +24,13 @@ echo "$getPacmanConf$addRepoToConfig" >>pacman.conf
 ls -a
 sudo cp -vir "$workDIR/.temp/ctos.gpg" /usr/share/pacman/keyrings/
 sudo cp -vir "$workDIR/.temp/ctos-trusted" /usr/share/pacman/keyrings/
-#sudo cp -vir "$workDIR/.temp/pacman.conf" /etc/
+sudo cp -vir "$workDIR/.temp/pacman.conf" /etc/
 cd ../
 rm -r .temp
 ls -a /usr/share/pacman/keyrings/
-#sudo pacman-key --init
-#sudo pacman-key --populate archlinux ctos
-#sudo pacman -Syyu ctos-functions --noconfirm
+sudo pacman-key --init
+sudo pacman-key --populate archlinux ctos
+sudo pacman -Syyu ctos-functions --noconfirm
 
 echo $workDIR
 
